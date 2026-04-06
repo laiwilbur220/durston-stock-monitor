@@ -32,11 +32,11 @@ DISCORD_WEBHOOK_URL: str = os.environ.get(
 
 # Email Notification Settings
 # Paste your credentials here, or set them as environment variables
-EMAIL_SENDER: str = os.environ.get("EMAIL_SENDER", "laiwilbur@gmail.com")
-EMAIL_PASSWORD: str = os.environ.get("EMAIL_PASSWORD", "dxxodfbmxmzyxcvl")  # Use an App Password, not your real password!
-EMAIL_RECIPIENT: str = os.environ.get("EMAIL_RECIPIENT", "laiwilbur@gmail.com")
-SMTP_SERVER: str = os.environ.get("SMTP_SERVER", "smtp.gmail.com")
-SMTP_PORT: int = int(os.environ.get("SMTP_PORT", 587))
+EMAIL_SENDER: str = os.environ.get("EMAIL_SENDER")
+EMAIL_PASSWORD: str = os.environ.get("EMAIL_PASSWORD")  # Use an App Password, not your real password!
+EMAIL_RECIPIENT: str = os.environ.get("EMAIL_RECIPIENT")
+SMTP_SERVER: str = os.environ.get("SMTP_SERVER") is
+SMTP_PORT: int = int(os.environ.get("SMTP_PORT"))
 
 # Product endpoint — Shopify .js gives us the `available` boolean per variant
 PRODUCT_URL: str = (
