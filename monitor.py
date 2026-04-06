@@ -28,7 +28,6 @@ import requests
 # Discord Webhook — set via environment variable or paste directly here
 DISCORD_WEBHOOK_URL: str = os.environ.get(
     "DISCORD_WEBHOOK_URL",
-    "https://discordapp.com/api/webhooks/1489180427716526236/p8S1OX_wZeJNNLbt79nRqqp5fX2HlmaRNaK4EU4FdiXyCEW693Ro7xhuvLEH5ze_6DHj",
 )
 
 # Email Notification Settings
