@@ -1,0 +1,14 @@
+[Unit]
+Description=Stock Notification Bot
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/stock-notification
+ExecStart=/home/ubuntu/stock-notification/venv/bin/python /home/ubuntu/stock-notification/monitor.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
